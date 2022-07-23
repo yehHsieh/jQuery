@@ -1,0 +1,283 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.media {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: end;
+}
+.media a {
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.media .fb {
+  color: #566da7;
+  border-right: 1px solid gray;
+}
+.media .twiter {
+  color: #00aaec;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 a {
+  background-image: url(../images/HTML作業圖檔/最終作業_images/logo.png);
+  width: 224px;
+  height: 55px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  text-align: center;
+}
+.header .nav a {
+  padding: 18px 25px;
+  color: #00cc99;
+  font-weight: bold;
+}
+.header .nav li {
+  border-bottom: 2px solid transparent;
+  position: relative;
+  width: 100%;
+}
+.header .nav li:hover {
+  border-bottom: 2px solid #00cc99;
+}
+.header .nav .dropMenu {
+  position: absolute;
+  top: 62px;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+.header .nav .dropMenu :hover {
+  opacity: 0.5;
+}
+.header .nav .active {
+  opacity: 0.8;
+  color: orange;
+}
+
+.banner {
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner h2 {
+  position: absolute;
+  left: 0;
+  top: 50;
+  z-index: 9;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  padding: 40px 20px;
+}
+
+.course {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.course a {
+  color: #000;
+}
+.course > li {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.course > li img {
+  height: 139px;
+  margin-bottom: 5px;
+}
+.course > li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.course > li p {
+  font-size: 14px;
+}
+.course .courseContent {
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+}
+.course .courseContent li {
+  width: 100%;
+  font-size: 14px;
+}
+
+.different {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.different h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.different table {
+  width: 80%;
+  margin: 0 auto;
+}
+.different table th, .different table td {
+  text-align: left;
+  padding: 12px 0;
+}
+.different table th {
+  background: #f7f7f7;
+  font-weight: bold;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.different table td {
+  border-bottom: 1px solid #dddddd;
+}
+.different table span {
+  color: #00cc99;
+}
+
+.fillForm {
+  text-align: center;
+  background: #006a50;
+  padding: 18px;
+}
+.fillForm form {
+  display: flex;
+}
+.fillForm form textarea {
+  width: 50%;
+  border-radius: 2%;
+}
+.fillForm form .fillData {
+  width: 46%;
+  margin-left: 2%;
+  position: relative;
+}
+.fillForm form .fillData label {
+  display: block;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-bottom: 6px;
+}
+.fillForm form .fillData > input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.fillForm form .fillData .button {
+  display: flex;
+  justify-content: end;
+}
+.fillForm form .fillData .button input {
+  width: 20%;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 58px;
+}
+.footer h2 a {
+  background: url(../images/HTML作業圖檔/最終作業_images/footerLogo.png) no-repeat;
+  width: 171px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.footer .contact {
+  width: 30%;
+}
+.footer .contact a {
+  display: inline-block;
+  color: #e46da0;
+}/*# sourceMappingURL=all.css.map */
