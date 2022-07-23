@@ -145,11 +145,14 @@ body {
   width: 100%;
   height: auto;
 }
+.banner .swiper-button-prev, .banner .swiper-button-next, .banner .swiper-scrollbar {
+  z-index: 99;
+}
 .banner h2 {
   position: absolute;
   left: 0;
   top: 50;
-  z-index: 9;
+  z-index: 1;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -280,4 +283,12 @@ body {
 .footer .contact a {
   display: inline-block;
   color: #e46da0;
+}
+
+.return {
+  position: fixed;
+  right: 3%;
+  bottom: 0;
+  font-size: 50px;
+  color: #566da7;
 }/*# sourceMappingURL=all.css.map */

@@ -1,9 +1,17 @@
 $(document).ready(function (){$('.nav li>a').click(function(event){
+  event.preventDefault();
   $(this).toggleClass("active");
   $(this).parent().find('ul').slideToggle();
   $(this).parent().siblings().find('ul').slideUp();
   $(this).parent().siblings().find('a').removeClass("active");
-})
+});
+
+$('.return>a').click(function(event){event.preventDefault();
+  $('html,body').animate({
+    scrollTop:0
+  },3000);
+
+});
 
   // swiper輪播效果
   const swiper = new Swiper('.swiper', {
